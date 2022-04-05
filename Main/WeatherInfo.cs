@@ -10,7 +10,7 @@ namespace Main
     {
         public class coord
         {
-           public double lon { get; set; }
+            public double lon { get; set; }
             public double lat { get; set; }
 
         }
