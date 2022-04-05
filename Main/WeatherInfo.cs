@@ -25,9 +25,7 @@ namespace Main
         public class main
         {
             public double temp { get; set; }
-            //double feels_like { get; set; }
-            //double temp_min { get; set; }
-            //double temp_max { get; set; }
+            
             public int pressure { get; set; }
             public int humidity { get; set; }
 
