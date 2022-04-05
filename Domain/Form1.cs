@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using Newtonsoft.Json;
+
 
 namespace Domain
 {
@@ -15,6 +18,20 @@ namespace Domain
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+         public void GetWeather()
+        {
+
         }
     }
 }
