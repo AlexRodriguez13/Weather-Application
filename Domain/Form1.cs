@@ -43,10 +43,11 @@ namespace Domain
                 picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
                 lblcondicion.Text = Info.weather[0].main;
                 lbldetalles.Text = Info.weather[0].description;
-                lblsunset.Text = Info.sys.sunset.ToString();
-                lblsunrise.Text = Info.sys.sunrise.ToString();
+                lblsunset.Text = ConvertDateTime(Info.sys.sunset).ToShortTimeString();
+                lblsunrise.Text = ConvertDateTime(Info.sys.sunrise).ToShortTimeString();
+
                 lblwindspeed.Text = Info.wind.speed.ToString();
-                lblpressure.Text = Info.main.preasure.ToString();
+                lblpressure.Text = Info.main.pressure.ToString();
 
             }
         }
