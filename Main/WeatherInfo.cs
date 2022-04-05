@@ -8,12 +8,7 @@ namespace Main
 {
     public class WeatherInfo
     {
-        public class coord
-        {
-            public double lon { get; set; }
-            public double lat { get; set; }
-
-        }
+       
 
         public class weather
         {
@@ -43,7 +38,7 @@ namespace Main
         }
         public class root
         {
-            public coord coord { get; set; }
+            
             public List<weather> weather  { get; set; }
              public main main { get; set; }
 
