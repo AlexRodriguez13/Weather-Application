@@ -34,8 +34,8 @@
             this.btnbuscar = new System.Windows.Forms.Button();
             this.lblcondicion = new System.Windows.Forms.Label();
             this.lbldetalles = new System.Windows.Forms.Label();
+            this.lblamanecer = new System.Windows.Forms.Label();
             this.lblsunrise = new System.Windows.Forms.Label();
-            this.lblna = new System.Windows.Forms.Label();
             this.lblsunset = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblpressure = new System.Windows.Forms.Label();
@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.picIcon = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,31 +107,31 @@
             this.lbldetalles.Text = "Detalles";
             this.lbldetalles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblamanecer
+            // 
+            this.lblamanecer.AutoSize = true;
+            this.lblamanecer.BackColor = System.Drawing.Color.Transparent;
+            this.lblamanecer.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblamanecer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblamanecer.Location = new System.Drawing.Point(30, 311);
+            this.lblamanecer.Name = "lblamanecer";
+            this.lblamanecer.Size = new System.Drawing.Size(60, 13);
+            this.lblamanecer.TabIndex = 5;
+            this.lblamanecer.Text = "Amanecer";
+            this.lblamanecer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // lblsunrise
             // 
             this.lblsunrise.AutoSize = true;
             this.lblsunrise.BackColor = System.Drawing.Color.Transparent;
             this.lblsunrise.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsunrise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblsunrise.Location = new System.Drawing.Point(30, 311);
+            this.lblsunrise.ForeColor = System.Drawing.Color.White;
+            this.lblsunrise.Location = new System.Drawing.Point(102, 311);
             this.lblsunrise.Name = "lblsunrise";
-            this.lblsunrise.Size = new System.Drawing.Size(60, 13);
-            this.lblsunrise.TabIndex = 5;
-            this.lblsunrise.Text = "Amanecer";
+            this.lblsunrise.Size = new System.Drawing.Size(26, 13);
+            this.lblsunrise.TabIndex = 6;
+            this.lblsunrise.Text = "N/A";
             this.lblsunrise.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblna
-            // 
-            this.lblna.AutoSize = true;
-            this.lblna.BackColor = System.Drawing.Color.Transparent;
-            this.lblna.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblna.ForeColor = System.Drawing.Color.White;
-            this.lblna.Location = new System.Drawing.Point(102, 311);
-            this.lblna.Name = "lblna";
-            this.lblna.Size = new System.Drawing.Size(26, 13);
-            this.lblna.TabIndex = 6;
-            this.lblna.Text = "N/A";
-            this.lblna.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblsunset
             // 
@@ -232,6 +233,19 @@
             this.picIcon.TabIndex = 14;
             this.picIcon.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(278, 281);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Pressure";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +253,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.picIcon);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblpressure);
@@ -247,8 +262,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblsunset);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblna);
             this.Controls.Add(this.lblsunrise);
+            this.Controls.Add(this.lblamanecer);
             this.Controls.Add(this.lbldetalles);
             this.Controls.Add(this.lblcondicion);
             this.Controls.Add(this.btnbuscar);
@@ -271,8 +286,8 @@
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.Label lblcondicion;
         private System.Windows.Forms.Label lbldetalles;
+        private System.Windows.Forms.Label lblamanecer;
         private System.Windows.Forms.Label lblsunrise;
-        private System.Windows.Forms.Label lblna;
         private System.Windows.Forms.Label lblsunset;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblpressure;
@@ -281,6 +296,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picIcon;
+        private System.Windows.Forms.Label label1;
     }
 }
 
