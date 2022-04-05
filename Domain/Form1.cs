@@ -50,5 +50,21 @@ namespace Domain
 
             }
         }
+
+        DateTime ConvertDateTime(long milisec)
+        {
+            DateTime dia = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).ToLocalTime();
+            dia = dia.AddSeconds(milisec).ToLocalTime();
+
+            return dia;
+
+        }
+         
+
+
+        
+       
+
+
     }
 }
