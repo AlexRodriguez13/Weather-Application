@@ -154,9 +154,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(36, 368);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Sunset";
+            this.label2.Text = "Atardecer";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblpressure
@@ -165,7 +165,7 @@
             this.lblpressure.BackColor = System.Drawing.Color.Transparent;
             this.lblpressure.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpressure.ForeColor = System.Drawing.Color.White;
-            this.lblpressure.Location = new System.Drawing.Point(337, 281);
+            this.lblpressure.Location = new System.Drawing.Point(397, 281);
             this.lblpressure.Name = "lblpressure";
             this.lblpressure.Size = new System.Drawing.Size(26, 13);
             this.lblpressure.TabIndex = 12;
@@ -190,7 +190,7 @@
             this.lblwindspeed.BackColor = System.Drawing.Color.Transparent;
             this.lblwindspeed.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblwindspeed.ForeColor = System.Drawing.Color.White;
-            this.lblwindspeed.Location = new System.Drawing.Point(337, 224);
+            this.lblwindspeed.Location = new System.Drawing.Point(397, 224);
             this.lblwindspeed.Name = "lblwindspeed";
             this.lblwindspeed.Size = new System.Drawing.Size(26, 13);
             this.lblwindspeed.TabIndex = 10;
@@ -205,9 +205,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.Location = new System.Drawing.Point(265, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.Size = new System.Drawing.Size(116, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Wind Speed";
+            this.label5.Text = "Velocidad Del Viento";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
@@ -241,9 +241,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(278, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Pressure";
+            this.label1.Text = "Presion";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1

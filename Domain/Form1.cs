@@ -29,7 +29,11 @@ namespace Domain
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            GetWeather();
+
+                GetWeather();
+          
+            
+
         }
          public void GetWeather()
         {

@@ -8,7 +8,7 @@ namespace Main
 {
     public class WeatherInfo
     {
-       
+       double lon { get; set; }
 
         public class weather
         {
