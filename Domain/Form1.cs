@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using Newtonsoft.Json;
-
+using Main;
 
 namespace Domain
 {
@@ -25,13 +25,30 @@ namespace Domain
 
         }
 
+        string APIKey = "5c61e63c6e9600c959150c6ca9326226";
+
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-
+            GetWeather();
         }
          public void GetWeather()
         {
+            using (WebClient web = new WebClient())
+            {
+                string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", txtcity.Text,APIKey);
+                var Json = web.DownloadString(url);
+                WeatherInfo.root Info = JsonConvert.DeserializeObject<WeatherInfo.root>(Json);
 
+
+                picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+                lblcondicion.Text = Info.weather[0].main;
+                lbldetalles.Text = Info.weather[0].description;
+                lblsunset.Text = Info.sys.sunset.ToString();
+                lblsunrise.Text = Info.sys.sunrise.ToString();
+                lblwindspeed.Text = Info.wind.speed.ToString();
+                lblpressure.Text = Info.main.preasure.ToString();
+
+            }
         }
     }
 }

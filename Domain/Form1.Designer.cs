@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbcity = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtcity = new System.Windows.Forms.TextBox();
             this.btnbuscar = new System.Windows.Forms.Button();
             this.lblcondicion = new System.Windows.Forms.Label();
             this.lbldetalles = new System.Windows.Forms.Label();
@@ -59,12 +59,12 @@
             this.lbcity.TabIndex = 0;
             this.lbcity.Text = "City";
             // 
-            // textBox1
+            // txtcity
             // 
-            this.textBox1.Location = new System.Drawing.Point(107, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtcity.Location = new System.Drawing.Point(107, 64);
+            this.txtcity.Name = "txtcity";
+            this.txtcity.Size = new System.Drawing.Size(100, 20);
+            this.txtcity.TabIndex = 1;
             // 
             // btnbuscar
             // 
@@ -252,7 +252,7 @@
             this.Controls.Add(this.lbldetalles);
             this.Controls.Add(this.lblcondicion);
             this.Controls.Add(this.btnbuscar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtcity);
             this.Controls.Add(this.lbcity);
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -267,7 +267,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbcity;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcity;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.Label lblcondicion;
         private System.Windows.Forms.Label lbldetalles;
