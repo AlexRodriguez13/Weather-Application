@@ -71,13 +71,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WeatherInfo.cs" />
+    <Compile Include="WeatherInformation\Coord.cs" />
+    <Compile Include="WeatherInformation\main.cs" />
+    <Compile Include="WeatherInformation\root.cs" />
+    <Compile Include="WeatherInformation\sys.cs" />
+    <Compile Include="WeatherInformation\Weather.cs" />
+    <Compile Include="WeatherInformation\wind.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="xd\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
